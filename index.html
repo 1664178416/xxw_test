@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>学生档案展示 Demov2</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <title>学生档案展示 Demo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="app">
+<main class="app">
+  <header class="topbar">
+    <div class="topbar-title">
+      <span class="shield">◆</span>
+      <span>高等学籍展示</span>
+    </div>
+    
+  </header>
 
-<div class="header">
-    <span class="shield">◆</span>
-    学生档案展示
-</div>
+  <div class="demo-banner">
+   
+  </div>
 
-<div class="notice">
-    本页面为前端展示 Demo，不代表官方学历证明
-</div>
+  <section class="profile-card">
+    <div class="photo-group">
+      <a class="photo-item" href="assets/admission-photo.png" target="_blank" rel="noopener">
+        <img class="avatar" src="assets/admission-photo.png" alt="录取照片占位图">
+        <span class="photo-label">录取照片</span>
+      </a>
 
-<section class="profile-card">
-    <div class="photos">
-        <div class="photo">
-            <div class="avatar">张</div>
-            <small>个人照片</small>
-        </div>
-        <div class="photo">
-            <div class="avatar gray">学</div>
-            <small>学历照片</small>
-        </div>
+      <a class="photo-item" href="assets/education-photo.svg" target="_blank" rel="noopener">
+        <img class="avatar" src="assets/education-photo.svg" alt="">
+        <span class="photo-label">学历照片</span>
+      </a>
     </div>
 
     <div class="person">
-        <div class="name">张三</div>
-        <div class="gender">男　2003年05月18日</div>
+      <div class="name">王永辉</div>
+      <div class="gender">男　2004年05月18日</div>
     </div>
 
-    <div class="school">电子科技大学</div>
-    <div class="line">计算机科学与工程学院　|　普通全日制</div>
+    <div class="school-block">
+      <div class="school">电子科技大学</div>
+      <div class="line">计算机科学与技术　|　普通全日制</div>
+    </div>
 
     <div class="badge">本科</div>
-</section>
+  </section>
 
+  <section class="detail">
+    <div class="row"><label>民族</label><span>汉族</span></div>
+    <div class="row"><label>证件号码</label><span>362227200209270919</span></div>
+    <div class="row"><label>学制</label><span>4年</span></div>
+    <div class="row"><label>学历类别</label><span>普通高等教育</span></div>
+    <div class="row"><label>分院</label><span>计算机科学与工程学院</span></div>
+    <div class="row"><label>系所</label><span>—</span></div>
+    <div class="row"><label>班级</label><span>2023080501</span></div>
+    <div class="row"><label>学号</label><span>2023080902012</span></div>
+    <div class="row"><label>入学日期</label><span>2023年09月01日</span></div>
+    <div class="row"><label>学籍状态</label><span>在籍</span></div>
+    <div class="row"><label>预计毕业日期</label><span>2027年06月30日</span></div>
+  </section>
 
-<section class="detail">
-
-<div class="row"><label>民族</label><span>汉族</span></div>
-<div class="row"><label>证件号码</label><span>****************</span></div>
-<div class="row"><label>学制</label><span>4年</span></div>
-<div class="row"><label>学历类别</label><span>普通高等教育</span></div>
-<div class="row"><label>分院</label><span>计算机科学与工程学院</span></div>
-<div class="row"><label>系所</label><span>-</span></div>
-<div class="row"><label>班级</label><span>2021Demo01</span></div>
-<div class="row"><label>学号</label><span>Demo20210001</span></div>
-<div class="row"><label>入学日期</label><span>2021年08月26日</span></div>
-<div class="row"><label>学籍状态</label><span>在籍（展示）</span></div>
-<div class="row"><label>预计毕业日期</label><span>2027年06月30日</span></div>
-
-</section>
-
-<button>查看信息报告（Demo）</button>
-
-</div>
+  <button class="report-btn" type="button">查看信息报告</button>
+  <footer class="footer-note">DEMO · NON-OFFICIAL PAGE</footer>
+</main>
 </body>
 </html>
